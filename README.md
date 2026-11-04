@@ -37,3 +37,15 @@ J(A,B) = \frac{2}{4} = 0{,}5
 $$
 
 Cette mesure constitue un outil de réflexion sur les points communs. Elle ne démontre pas une vérité métaphysique et ne mesure pas à elle seule le bien-être personnel ou collectif.
+
+## Équivalence masse-énergie d’Einstein
+
+$$
+E = mc^2
+$$
+
+- $E$ : l’énergie au repos, en joules (J).
+- $m$ : la masse au repos, en kilogrammes (kg).
+- $c$ : la vitesse de la lumière dans le vide, soit exactement $299\,792\,458\ \text{m/s}$.
+
+Cette relation exprime l’équivalence entre la masse et l’énergie au repos en relativité restreinte.
