@@ -16,6 +16,36 @@ $$
 
 L’indice varie de 0 (aucun élément commun) à 1 (ensembles identiques). Si les deux ensembles sont vides, la fraction est indéfinie ; on peut fixer une convention explicite, par exemple $J(\varnothing,\varnothing)=1$.
 
+## Exemple numérique vérifiable
+
+Prenons deux ensembles simples :
+
+- $A = \{1, 2, 3\}$
+- $B = \{2, 3, 4\}$
+
+| Calcul | Éléments | Nombre d’éléments |
+| --- | --- | ---: |
+| Intersection $A \cap B$ | $\{2, 3\}$ | 2 |
+| Union $A \cup B$ | $\{1, 2, 3, 4\}$ | 4 |
+
+$
+J(A,B) = \frac{|A \cap B|}{|A \cup B|} = \frac{2}{4} = 0{,}5
+$
+
+**Interprétation :** les deux ensembles ont 2 éléments communs parmi 4 éléments distincts au total. Leur indice de similarité de Jaccard est donc de **0,5 (50 %)**.
+
+Pour vérifier ce résultat avec Python 3 :
+
+```python
+A = {1, 2, 3}
+B = {2, 3, 4}
+intersection = A & B
+union = A | B
+print(len(intersection) / len(union))  # 0.5
+```
+
+Python affiche `0.5` avec un point décimal, équivalent à `0,5` en notation française.
+
 ## Application à mon projet
 
 Je peux définir $A$ comme l’ensemble de mes besoins et valeurs, et $B$ comme l’ensemble des besoins et valeurs exprimés par une communauté. L’indice de Jaccard permet alors de mesurer leur part commune, à partir de catégories définies ensemble.
